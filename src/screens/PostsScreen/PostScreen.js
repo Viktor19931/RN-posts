@@ -7,6 +7,7 @@ import MessagePost from "../../components/MessagePost/MessagePost";
 import PhotoPost from "../../components/PhotoPost/PhotoPost";
 import menu from '../../assets/icons8-menu-24.png'
 import {navigatorDrawer} from "../../utility/misc";
+import Segments from "../../components/Segments/Segments";
 
 class PostScreen extends Component {
     constructor(props) {
@@ -52,6 +53,7 @@ class PostScreen extends Component {
     render() {
         return (
             <SafeAreaView style={{flex: 1}}>
+                <Segments />
                 <ScrollView style={styles.container}>
                     <FlatList
                         data={this.props.posts}

@@ -1,20 +1,39 @@
 import React, { Component } from 'react';
 import { View,  StyleSheet, Text, TouchableWithoutFeedback } from 'react-native';
+import { connect } from 'react-redux';
+
+import { selectSegment } from '../../store/actions/post_actions';
 
 class Segments extends Component {
     state = {
-        segments: ['All', 'Photos', 'Messages']
+        segments: [
+            {
+                name: 'All',
+                id: 'all'
+            },
+            {
+                name: 'Photos',
+                id: 'photoPost'
+            },
+            {
+                name: 'Messages',
+                id: 'messagePost'
+            }
+        ]
     };
 
-    onSelect(f) {
-        console.log(f);
+    onSelect(category) {
+        this.props.selectSegment(category);
     }
 
     generateSegments() {
         return this.state.segments.map(item => (
-            <TouchableWithoutFeedback onPress={() => this.onSelect(item)}>
+            <TouchableWithoutFeedback
+                key={item.name}
+                onPress={() => this.onSelect(item.id)}
+            >
                 <View style={styles.segmentContainer}>
-                    <Text style={styles.segment}>{item}</Text>
+                    <Text style={styles.segment}>{item.name}</Text>
                 </View>
             </TouchableWithoutFeedback>
         ));
@@ -30,6 +49,7 @@ class Segments extends Component {
                 height: 40,
                 backgroundColor: '#68ffca'
             }}>
+                {this.generateSegments()}
             </View>
         );
     }
@@ -51,4 +71,10 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Segments;
+const mapDispatchToProps = dispatch => {
+    return {
+        selectSegment: (category) => dispatch(selectSegment(category))
+    }
+};
+
+export default connect(null, mapDispatchToProps)(Segments);
