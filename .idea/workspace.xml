@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97598ca8-7fcb-46ec-a50a-36d7f04ff161" name="Default" comment="">
+    <list default="true" id="97598ca8-7fcb-46ec-a50a-36d7f04ff161" name="Default" comment="i">
       <change afterPath="$PROJECT_DIR$/src/screens/SideDrawer/SideDrawer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/misc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MessagePost/MessagePost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MessagePost/MessagePost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PhotoPost/PhotoPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoPost/PhotoPost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/PostsScreen/PostScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/PostsScreen/PostScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +28,8 @@
       <file leaf-file-name="PostScreen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/screens/PostsScreen/PostScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+            <state relative-caret-position="795">
+              <caret line="53" column="25" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="25" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -33,23 +37,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SideDrawer.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SideDrawer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screens/SideDrawer/SideDrawer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="330">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessagePost.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/MessagePost/MessagePost.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="49" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -57,35 +70,8 @@
       <file leaf-file-name="PhotoPost.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/PhotoPost/PhotoPost.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessagePost.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/MessagePost/MessagePost.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AsyncImage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/AsyncImage/AsyncImage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -95,6 +81,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>item</find>
+      <find>imageSty</find>
       <find>Viewv</find>
     </findStrings>
   </component>
@@ -111,11 +98,12 @@
         <option value="$PROJECT_DIR$/android/app/src/main/java/com/postsapp/MainApplication.java" />
         <option value="$PROJECT_DIR$/src/components/AsyncImage/AsyncImage.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/components/MessagePost/MessagePost.js" />
         <option value="$PROJECT_DIR$/src/components/PhotoPost/PhotoPost.js" />
+        <option value="$PROJECT_DIR$/src/utility/misc.js" />
         <option value="$PROJECT_DIR$/src/screens/PostsScreen/PostScreen.js" />
         <option value="$PROJECT_DIR$/App.js" />
         <option value="$PROJECT_DIR$/src/screens/SideDrawer/SideDrawer.js" />
-        <option value="$PROJECT_DIR$/src/components/MessagePost/MessagePost.js" />
       </list>
     </option>
   </component>
@@ -142,10 +130,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="33" />
-    <option name="y" value="24" />
     <option name="width" value="1280" />
-    <option name="height" value="723" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -203,14 +189,7 @@
               <item name="postsApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="postsApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="postsApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="postsApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -255,7 +234,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536348203465</updated>
-      <workItem from="1536348205175" duration="5017000" />
+      <workItem from="1536348205175" duration="7259000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1536352412468</created>
@@ -264,11 +243,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536352412468</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="split styles">
+      <created>1536353726129</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536353726129</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5017000" />
+    <option name="totallyTimeSpent" value="7259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -282,7 +268,7 @@
       <window_info anchor="bottom" id="Version Control" weight="0.329653" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32965517" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -293,6 +279,26 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info id="npm" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32965517" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2494043" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.329653" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -328,16 +334,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="split styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="split styles" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -380,16 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AsyncImage/AsyncImage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -397,47 +387,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AsyncImage/AsyncImage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MessagePost/MessagePost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="49" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PhotoPost/PhotoPost.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utility/misc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="13" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/SideDrawer/SideDrawer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        <state relative-caret-position="270">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/screens/PostsScreen/PostScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        <state relative-caret-position="795">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="25" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MessagePost/MessagePost.js">
+    <entry file="file://$PROJECT_DIR$/src/screens/SideDrawer/SideDrawer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

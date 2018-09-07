@@ -3,8 +3,7 @@ import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
 
 import like from '../../assets/icons8-heart-40.png';
 import comment from '../../assets/icons8-chat-bubble-50.png';
-import AsyncImage from "../AsyncImage/AsyncImage";
-// import {CachedImage,} from "react-native-cached-image";
+import { CachedImage } from "react-native-cached-image";
 
 class PhotoPost extends Component {
     render() {
@@ -16,7 +15,7 @@ class PhotoPost extends Component {
                     <Text style={nameStyle}>{userName}</Text>
                 </View>
                 <View>
-                    <AsyncImage
+                    <CachedImage
                         source={{uri: imageURL}}
                         style={image}
                     />
@@ -36,8 +35,8 @@ class PhotoPost extends Component {
                         />
                         <Text>{commentsCount}</Text>
                     </View>
-                    <View style={[icoWrap, {alignItems: 'flex-end'}]}>
-                        <Text>May 5, 17:00</Text>
+                    <View style={[{alignItems: 'flex-end'}]}>
+                        <Text style={{alignSelf: 'flex-end'}}>May 5, 17:00</Text>
                     </View>
                 </View>
             </View>

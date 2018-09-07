@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, StyleSheet, Image, Dimensions} from 'react-native';
 
 import comment from '../../assets/icons8-chat-bubble-50.png';
-import AsyncImage from "../AsyncImage/AsyncImage";
-
+import { CachedImage } from 'react-native-cached-image';
 
 class MessagePost extends Component {
     render() {
@@ -13,7 +12,7 @@ class MessagePost extends Component {
             <View style={mainWrapper}>
                 <View style={avatarContainer}>
                     <View style={avatarContainer}>
-                        <AsyncImage
+                        <CachedImage
                             source={{uri: imageURL}}
                             style={imageStyle}
                         />
