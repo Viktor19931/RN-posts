@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Image, Dimensions} from 'react-native';
 
-import like from '../../assets/icons8-heart-40.png';
 import comment from '../../assets/icons8-chat-bubble-50.png';
 import AsyncImage from "../AsyncImage/AsyncImage";
 
@@ -9,17 +8,18 @@ import AsyncImage from "../AsyncImage/AsyncImage";
 class MessagePost extends Component {
     render() {
         const { userName, imageURL, message, commentsCount } = this.props.posts;
+        const { mainWrapper, avatarContainer, content, contentHeader, icoStyle, imageStyle, commentWrapper} = styles;
         return (
-            <View style={{flex: 1, padding: 10, borderBottomWidth: 1, borderColor: '#8d8d8d'}}>
-                <View style={{flexDirection: 'row', flex: 1}}>
-                    <View style={{flex:1, alignItems: 'center'}}>
+            <View style={mainWrapper}>
+                <View style={avatarContainer}>
+                    <View style={avatarContainer}>
                         <AsyncImage
                             source={{uri: imageURL}}
-                            style={{width: 60, height:  60, borderRadius: 30, margin: 'auto'}}
+                            style={imageStyle}
                         />
                     </View>
-                    <View style={{flexDirection: 'column', flex: 3}}>
-                        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+                    <View style={content}>
+                        <View style={contentHeader}>
                             <Text>{userName}</Text>
                             <Text>May 5, 17:00</Text>
                         </View>
@@ -28,10 +28,10 @@ class MessagePost extends Component {
                         </View>
                     </View>
                 </View>
-                <View style={{flexDirection: 'row', justifyContent: 'center'}}>
+                <View style={commentWrapper}>
                     <Image
                         source={comment}
-                        style={{width: 15, height: 15, marginRight: 5}}
+                        style={icoStyle}
                     />
                     <Text>{commentsCount}</Text>
                 </View>
@@ -41,15 +41,36 @@ class MessagePost extends Component {
 }
 
 const styles = StyleSheet.create({
-    container: {
+    mainWrapper: {
         flex: 1,
-        padding: 5
+        padding: 10,
+        borderBottomWidth: 1,
+        borderColor: '#8d8d8d'
     },
-    imageView: {
-
+    avatarContainer: {
+        flexDirection: 'row',
+        flex: 1
     },
-    image: {
-
+    imageStyle: {
+        width: 60,
+        height:  60,
+        borderRadius: 30,
+        margin: 'auto'},
+    content: {
+        flexDirection: 'column',
+        flex: 3},
+    contentHeader: {
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    commentWrapper: {
+        flexDirection: 'row',
+        justifyContent: 'center'
+    },
+    icoStyle: {
+        width: 15,
+        height: 15,
+        marginRight: 5
     }
 });
 

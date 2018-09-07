@@ -4,8 +4,6 @@ import {
     SafeAreaView,
     ScrollView,
     StyleSheet,
-    Text,
-    View,
     TouchableWithoutFeedback,
     Image
 } from 'react-native';
@@ -16,12 +14,8 @@ import MessagePost from "../../components/MessagePost/MessagePost";
 import PhotoPost from "../../components/PhotoPost/PhotoPost";
 import posts from '../../../posts'
 
-import like from '../../assets/icons8-heart-40.png';
-import comment from '../../assets/icons8-chat-bubble-50.png';
-
 class PostScreen extends Component {
     renderPost = ({item, index}) => {
-        // console.log(item.likesCount != null);
         if (item.type === "photoPost") {
             return (
                 <PhotoPost posts={item}/>
@@ -35,10 +29,6 @@ class PostScreen extends Component {
 
     componentDidMount() {
         this.props.dispatchPosts();
-        setTimeout(() => {
-            console.log(this.props.posts);
-            }, 2312
-        )
     }
 
     render() {

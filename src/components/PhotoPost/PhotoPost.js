@@ -9,33 +9,34 @@ import AsyncImage from "../AsyncImage/AsyncImage";
 class PhotoPost extends Component {
     render() {
         const { userName, imageURL, likesCount, commentsCount } = this.props.posts;
+        const { mainContainer, avatarContainer, image, nameStyle, contentContainer, icoStyle, icoWrap } = styles;
         return (
-            <View style={{borderBottomWidth: 1, borderColor: '#8d8d8d'}}>
-                <View style={{height: 40, flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-                    <Text style={{fontSize: 22, fontWeight: 'bold'}}>{userName}</Text>
+            <View style={mainContainer}>
+                <View style={avatarContainer}>
+                    <Text style={nameStyle}>{userName}</Text>
                 </View>
                 <View>
                     <AsyncImage
                         source={{uri: imageURL}}
-                        style={{width: Dimensions.get('window').width, height: 320}}
+                        style={image}
                     />
                 </View>
-                <View style={{padding: 10, flexDirection: 'row', justifyContent: 'space-between'}}>
-                    <View style={{flexDirection: 'row', flex: 1}}>
+                <View style={contentContainer}>
+                    <View style={icoWrap}>
                         <Image
                             source={like}
-                            style={{width: 15, height: 15, marginRight: 5}}
+                            style={icoStyle}
                         />
                         <Text>{likesCount}</Text>
                     </View>
-                    <View style={{flexDirection: 'row', flex: 1, justifyContent: 'center'}}>
+                    <View style={[icoWrap, {justifyContent: 'center'}]}>
                         <Image
                             source={comment}
-                            style={{width: 15, height: 15, marginRight: 5}}
+                            style={icoStyle}
                         />
                         <Text>{commentsCount}</Text>
                     </View>
-                    <View style={{flex: 1, alignItems: 'flex-end'}}>
+                    <View style={[icoWrap, {alignItems: 'flex-end'}]}>
                         <Text>May 5, 17:00</Text>
                     </View>
                 </View>
@@ -45,9 +46,38 @@ class PhotoPost extends Component {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
+    mainContainer: {
+        borderBottomWidth: 1,
+        borderColor: '#8d8d8d'
     },
+    avatarContainer: {
+        height: 40,
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    image: {
+        width: Dimensions.get('window').width,
+        height: 320
+    },
+    nameStyle: {
+        fontSize: 22,
+        fontWeight: 'bold'
+    },
+    contentContainer: {
+        padding: 10,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    icoStyle: {
+        width: 15,
+        height: 15,
+        marginRight: 5
+    },
+    icoWrap: {
+        flexDirection: 'row',
+        flex: 1
+    }
 });
 
 export default PhotoPost;
