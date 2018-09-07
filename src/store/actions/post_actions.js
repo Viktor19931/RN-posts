@@ -1,4 +1,4 @@
-import {GET_POSTS} from "../types";
+import { GET_POSTS, SELECT_SEGMENT } from "../types";
 import posts from '../../../posts';
 
 export const dispatchPosts = () => {
@@ -8,8 +8,7 @@ export const dispatchPosts = () => {
     };
 };
 
-export const selectSegment = (segment) => {
-    console.log(segment);
+export const filteredPosts = (segment) => {
     return dispatch => {
         let newPosts;
         newPosts = posts.filter(post => { return post.type === segment });
@@ -18,6 +17,5 @@ export const selectSegment = (segment) => {
             type: GET_POSTS,
             payload: newPosts
         });
-        console.log(newPosts);
     }
 };

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View,  StyleSheet, Text, TouchableWithoutFeedback } from 'react-native';
 import { connect } from 'react-redux';
 
-import { selectSegment } from '../../store/actions/post_actions';
+import { filteredPosts } from '../../store/actions/post_actions';
 
 class Segments extends Component {
     state = {
@@ -19,11 +19,18 @@ class Segments extends Component {
                 name: 'Messages',
                 id: 'messagePost'
             }
-        ]
+        ],
+        selectedCategory: 'all'
     };
 
     onSelect(category) {
-        this.props.selectSegment(category);
+        this.props.filteredPosts(category);
+        this.setState(prevState => {
+            return {
+                ...prevState,
+                selectedCategory: category
+            }
+        });
     }
 
     generateSegments() {
@@ -32,8 +39,11 @@ class Segments extends Component {
                 key={item.name}
                 onPress={() => this.onSelect(item.id)}
             >
-                <View style={styles.segmentContainer}>
-                    <Text style={styles.segment}>{item.name}</Text>
+                <View style={[styles.segmentContainer,
+                    this.state.selectedCategory === item.id
+                    ? styles.active
+                : null]}>
+                    <Text style={[styles.segment]}>{item.name}</Text>
                 </View>
             </TouchableWithoutFeedback>
         ));
@@ -47,7 +57,6 @@ class Segments extends Component {
                 justifyContent: 'space-around',
                 alignItems: 'center',
                 height: 40,
-                backgroundColor: '#68ffca'
             }}>
                 {this.generateSegments()}
             </View>
@@ -61,19 +70,21 @@ const styles = StyleSheet.create({
     },
     segmentContainer: {
         borderRadius: 15,
-        backgroundColor: 'green',
+        padding: 10,
     },
     segment: {
         fontSize: 14,
-        padding: 10,
         color: 'black',
-        backgroundColor: 'yellow'
+    },
+    active: {
+        backgroundColor: '#d9a087'
     }
 });
 
+
 const mapDispatchToProps = dispatch => {
     return {
-        selectSegment: (category) => dispatch(selectSegment(category))
+        filteredPosts: (category) => dispatch(filteredPosts(category))
     }
 };
 

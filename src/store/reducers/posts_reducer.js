@@ -1,7 +1,6 @@
-import {GET_POSTS, SELECT_SEGMENT} from "../types";
+import { GET_POSTS } from "../types";
 
 const INITIAL_STATE = {
-    selectedSegment: 'All',
     posts: [],
 };
 
@@ -11,11 +10,6 @@ const reducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 posts: action.payload
-            };
-        case SELECT_SEGMENT:
-            return {
-                ...state,
-                selectedSegment: action.payload
             };
         default:
             return state;
