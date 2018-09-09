@@ -35,7 +35,7 @@ class PhotoPost extends Component {
                         />
                         <Text>{commentsCount}</Text>
                     </View>
-                    <View style={[{alignItems: 'flex-end'}]}>
+                    <View style={[{flex:1, alignItems: 'flex-end'}]}>
                         <Text style={{alignSelf: 'flex-end'}}>May 5, 17:00</Text>
                     </View>
                 </View>
